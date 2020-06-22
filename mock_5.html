@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+<title>Mock Page HTML5</title>
+<meta charset="utf-8">
+</head>
+
+<div id="output1">  
+    <p id="savedText"> </p>
+    <p id="savedText1"> </p>
+    <form id="Employee" action="" method="post">
+      <h3>Employee Data Entry Form</h3>
+      <h4>Checkout at our <a href="https://www.google.com/">FAQ</a> page</h4>
+      <form>
+        <fieldset>
+            <input placeholder="Name" id="Name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Employee ID" id="Employee_id" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <label for="Date of Birth">Date of Birth</label> <input placeholder="Date of Birth" type="date" tabindex="3" id="DOB" required>
+        </fieldset>
+        <fieldset>
+            <label for="Gender">Gender</label>
+            <select id="gender" name="Gender" tabindex="4" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Ohter</option>
+            </select>
+        </fieldset>
+        <button name="submit" type="submit" id="submit" onclick="save()">Submit</button>
+    </form>
+    <br/>
+  </div>
+
+  <fieldset>
+    <legend>Local Storage</legend>
+    <div id="output2"> </div>
+    <div id="output3"> </div>
+    <div id="output4"> </div>
+    <div id="output5"> </div>
+</fieldset>
+
+<script>
+
+function save(){
+    var name=document.getElementById("Name").value;
+    var Employee_id=document.getElementById("Employee_id").value;
+    var dob=document.getElementById("DOB").value;
+    var gender=document.getElementById("gender").value;
+
+    localStorage.setItem("name",name);
+    localStorage.setItem("EmployeeID",Employee_id);
+    localStorage.setItem("dob",dob);
+    localStorage.setItem("gender",gender);
+}
+
+document.getElementById("output2").innerHTML= " Name: " +localStorage.getItem("name");
+document.getElementById("output3").innerHTML= " ID: " + localStorage.getItem("EmployeeID");
+document.getElementById("output4").innerHTML= " DOB: " + localStorage.getItem("dob");
+document.getElementById("output5").innerHTML=  " Gender:  " + localStorage.getItem("gender");
+
+</script>
+
+</html>

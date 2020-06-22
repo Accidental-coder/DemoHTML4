@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+<meta charset=UTF-8">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<!-- include Cycle2 -->
+<script src="path/to/your/copy/of/jquery.cycle2.js"></script>
+
+<!-- include one or more optional Cycle2 plugins -->
+<script src="path/to/your/copy/of/jquery.cycle2.carousel.js"></script>
+
+<script>
+    $("slideshow-back").cycle({
+        fx:'scrollDown', 
+        delay: -2000
+    });
+
+</script>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div class="wrapper">
+  <div class="sdsd">
+    <div class="header padding-separator"> <a href="#" class="logo padding-separator">Barclays</a>
+      <ul class="header-menu">
+        <li><a href="index.html" class="selected">Homee</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="html5.html">Services</a></li>
+        <li><a href="our-work.html">Pesonal Banking</a></li>
+        <li><a href="blog.html">IB</a></li>
+        <li><a href="mock_5.html">Employe SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="slider-holder">
+    <div class="slider">
+      <div class="featured-work margin-separator">
+        <h1 class="h1-main-page">WE BUILD REL</h1>
+        <h2 class="h2-main-page">AND WE BUILD THEM WELL</h2>
+        <p>Could the pandemic reshape retail business, from markets and the high street to specialist outlets? Barclays specialists share their thoughts </p>
+        <ul>
+          <li><a href="#" class="green-button margin-separator">View our portofolio</a></li>
+          <li><a href="#" class="blue-button margin-separator">View our services</a></li>
+        </ul>
+      </div>
+      <div class="slideshow-back"> 
+          <li><a href="#"><img src="images/Barclaycard.png" width="376" height="302" alt=""></a></li>
+          <li><a href="#"><img src="images/s2.jpg" width="376" height="302" alt=""></a></li>
+          <li><a href="#"><img src="images/slideshow-image3.jpg" width="376" height="302" alt=""></a></li>
+      </div>
+    </div>
+  </div>
+  <div class="content-holder">
+    <div class="content separator-50px">
+      <div class="left box-holder">
+        <div class="box-holder-top">
+          <h1>BPL</h1>
+          <span class="h1-separator"></span> </div>
+        <div class="box-holder-content">
+          <p> <img src="images/fifa1.jpg" alt="" class="left"> <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span> </p>
+        </div>
+        <div class="box-holder-bottom"><a href="#">Achivements</a></div>
+      </div>
+      <div class="center box-holder">
+        <div class="box-holder-top">
+          <h1>Credit Card</h1>
+          <span class="h1-separator"></span> </div>
+        <div class="box-holder-content">
+          <p> <img src="images/cc1.jpg" alt="" class="left"> <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span> </p>
+        </div>
+        <div class="box-holder-bottom"><a href="#">View our services</a></div>
+      </div>
+      <div class="right box-holder">
+        <div class="box-holder-top">
+          <h1>Wealth Management</h1>
+          <span class="h1-separator"></span> </div>
+        <div class="box-holder-content">
+          <p> <img src="images/money1.jpg" alt="" class="left"> <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span> </p>
+        </div>
+        <div class="box-holder-bottom"><a href="#">View our services</a></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--script type="text/javascript">
+if(typeof sIFR == "function"){
+sIFR.replaceElement(named({sSelector:"body h1.h1-main-page", sFlashSrc:"sifr/h1-main-page.swf", sColor:"#0D112F", sLinkColor:"#6F6F6F", sBgColor:"#FFFFFF", sHoverColor:"#C90000", sWmode:"transparent"}));
+sIFR.replaceElement(named({sSelector:"body h2.h2-main-page", sFlashSrc:"sifr/h2-main-page.swf", sColor:"#32A700", sLinkColor:"#C90000", sBgColor:"#FFFFFF", sHoverColor:"#6F6F6F", sWmode:"transparent"}));
+sIFR.replaceElement(named({sSelector:".box-holder-top h1", sFlashSrc:"sifr/h1.swf", sColor:"#0D112F", sLinkColor:"#0D112F", sBgColor:"#FFFFFF", sHoverColor:"#0D112F", sWmode:"transparent", sFlashVars:"textalign=center"}));
+sIFR.replaceElement(named({sSelector:"body h1", sFlashSrc:"sifr/h1.swf", sColor:"#0D112F", sLinkColor:"#0D112F", sBgColor:"#FFFFFF", sHoverColor:"#0D112F", sWmode:"transparent"}));
+sIFR.replaceElement(named({sSelector:"body h2", sFlashSrc:"sifr/h2.swf", sColor:"#32A700", sLinkColor:"#32A700", sBgColor:"#FFFFFF", sHoverColor:"#32A700", sWmode:"transparent"}));
+sIFR.replaceElement(named({sSelector:"body h3", sFlashSrc:"sifr/h3.swf", sColor:"#0D112F", sLinkColor:"#0D112F", sBgColor:"#FFFFFF", sHoverColor:"#0D112F", sWmode:"transparent"}));
+sIFR.replaceElement(named({sSelector:".title h4", sFlashSrc:"sifr/left-title.swf", sColor:"#FFFFFF", sLinkColor:"#FFFFFF", sBgColor:"#FFFFFF", sHoverColor:"#FFFFFF", sWmode:"transparent", sFlashVars:"textalign=center"}));
+}
+</script-->
+<!-- END PAGE SOURCE -->
+</html>
